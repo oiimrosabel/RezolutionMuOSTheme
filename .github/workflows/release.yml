@@ -22,8 +22,7 @@ jobs:
           python-version: "3.13"
 
       - name: Generate Theme Archives
-        working-directory: ./__scripts
-        run: python generate.py <<< "2"
+        run: python -m rezolution --grid both --theme All
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
@@ -32,4 +31,4 @@ jobs:
           token: "${{ secrets.GITHUB_TOKEN }}"
           generate_release_notes: true
           prerelease: false
-          files: __build/*.zip
+          files: build/*.zip

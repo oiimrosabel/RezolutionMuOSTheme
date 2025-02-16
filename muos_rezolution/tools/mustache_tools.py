@@ -2,7 +2,7 @@ import json
 import os
 import re
 
-import tools.display_tools as c
+import muos_rezolution.tools.display_tools as c
 
 NOTFOUND_PLACEHOLDER = "##NOTFOUND##"
 nf = NOTFOUND_PLACEHOLDER

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "muos_rezolution"
+version = "5"
+authors = [
+  { name="oiimrosabel", email="" },
+]
+description = "An elegant and easy on the eyes MuOS theme."
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+homepage = "https://github.com/oiimrosabel/RezolutionMuOSTheme"
+repository = "https://github.com/oiimrosabel/RezolutionMuOSTheme.git"
+documentation = "https://github.com/oiimrosabel/RezolutionMuOSTheme/blob/main/README.md"

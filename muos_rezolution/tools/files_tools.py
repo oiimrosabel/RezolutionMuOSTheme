@@ -2,7 +2,7 @@ import glob
 import os
 import shutil
 
-import tools.display_tools as c
+import muos_rezolution.tools.display_tools as c
 
 
 def deleteFile(path: str):

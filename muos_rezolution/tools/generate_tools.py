@@ -2,10 +2,9 @@ import os
 import shutil
 import sys
 
-import tools.display_tools as c
-import tools.files_tools as d
-import tools.mustache_tools as m
-from tools.files_tools import saveFile
+import muos_rezolution.tools.display_tools as c
+import muos_rezolution.tools.files_tools as d
+import muos_rezolution.tools.mustache_tools as m
 
 
 def mergeFolders(srcPath: str, destPath):
@@ -29,7 +28,7 @@ def generateSchemes(templatePath: str, dataPath: str, outputPath: str):
     templateStr = d.readFile(templatePath)
     dataDict = m.interpretAsJson(d.readFile(dataPath))
     output = m.replaceMustaches(templateStr, dataDict)
-    saveFile(outputPath, output)
+    d.saveFile(outputPath, output)
     c.success(f"Scheme generated in {outputPath}")
 
 
